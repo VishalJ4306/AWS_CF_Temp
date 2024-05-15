@@ -1,0 +1,16 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+Description: This is the first cloudformation template to create S3 bucket and EC2 Instance
+Resources:
+  VishalS3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: krish1231123
+
+  VishalEC2Instance:
+   Type: AWS::EC2::Instance
+   Properties:
+     ImageId: ami-0f58b397bc5c1f2e8
+     InstanceType: t2.micro
+ 
+
